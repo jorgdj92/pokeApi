@@ -77,7 +77,11 @@ query{
   }
 }
 ```
-
+## Docker
+```
+docker build -t ms-pokeapi .
+docker run -d -p 443:3000  ms-pokeapi
+```
 
 ## Support
 
