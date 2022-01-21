@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Ability {
+  name: String!
+  url: String!
+}
+
+type Abilities {
+  is_hidden: Boolean
+  slot: Float
+  ability: Ability!
+}
+
+type Pokemon {
+  name: String!
+  abilities: [Abilities!]
+  weight: Float!
+}
+
+type Query {
+  pokemon(data: PokemonDto!): Pokemon!
+}
+
+input PokemonDto {
+  name: String
+}
